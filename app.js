@@ -1,1 +1,1 @@
-    alert("Bem vindo ao meu portfólio, em breve teremos atualizações!!!")
+    alert("Bem vindo ao meu portfólio, em breve teremos atualizações!!!");
