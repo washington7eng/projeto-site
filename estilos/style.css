@@ -103,3 +103,33 @@ h3 {
     padding: 5px;
     margin-bottom: 20px;
 }
+
+.txt-animado span{
+    position: relative;    
+}
+
+.txt-animado span::before{
+    content: "";
+    color: #4169E1;
+    animation: palavras 20s infinite;
+
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "Minha Jornada como Desenvolvedor";
+    }
+    21%,40%{
+        content: "inovando e redefinindo os limites do possível.";
+    }
+    41%,60%{
+        content: "a união perfeita entre técnica e arte no desenvolvimento de software.";
+    }
+    61%,80%{
+        content: "criando experiências digitais que encantam e inspiram.";
+    }
+    81%,100%{
+        content: "transformando desafios em oportunidades inovadoras.";
+    }
+
+}
