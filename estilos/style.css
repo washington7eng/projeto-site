@@ -110,8 +110,34 @@ h3 {
 
 .txt-animado span::before{
     content: "";
-    color: #4169E1;
+    color: #565656;
     animation: palavras 20s infinite;
+
+}
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #565656;
+    right: -10px;    
+    animation: cursor .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 10px);
+    background-color: white;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 10px);
+    }
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid white;
+    }
 
 }
 
@@ -123,13 +149,13 @@ h3 {
         content: "inovando e redefinindo os limites do possível.";
     }
     41%,60%{
-        content: "a união perfeita entre técnica e arte no desenvolvimento de software.";
+        content: "moldando o futuro.";
     }
     61%,80%{
-        content: "criando experiências digitais que encantam e inspiram.";
+        content: "além dos limites.";
     }
     81%,100%{
-        content: "transformando desafios em oportunidades inovadoras.";
+        content: "inovando juntos.";
     }
 
 }
